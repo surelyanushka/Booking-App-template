@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/item_artist_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/artist1" />
+
+        <TextView
+            android:id="@+id/item_artist_date"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="24 July"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="18dp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/item_artist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="BTS Concert, Seoul"
+        android:textColor="@color/light_black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/card_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_artist_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:text="Sejong Center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/card_view"
+        app:layout_constraintTop_toBottomOf="@+id/item_artist_title" />
+
+    <TextView
+        android:id="@+id/item_artist_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="100 USD"
+        android:textColor="@color/light_black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card_view"
+        app:layout_constraintTop_toBottomOf="@+id/item_artist_description" />
+
+    <Button
+        android:id="@+id/item_artist_booking"
+        android:layout_width="99dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button"
+        android:text="Book Now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView2"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="135dp"-->
+    <!--        android:background="@drawable/container_bg"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/item_artist_title"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:text="BTS Concert, Seoul"-->
+    <!--        android:textColor="@color/colorPrimaryDark"-->
+    <!--        android:textSize="18sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/imageView2"-->
+    <!--        tools:layout_editor_absoluteX="162dp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/item_artist_description"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="162dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:text="Sejong Center"-->
+    <!--        android:textSize="15dp"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/imageView2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/item_artist_title" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/item_artist_price"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:text="100 USD"-->
+    <!--        android:textColor="@color/light_black"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/imageView2"-->
+    <!--        tools:layout_editor_absoluteX="162dp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/item_artist_booking"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="35dp"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:background="@drawable/round_button"-->
+    <!--        android:text="Book Now"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/imageView2"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/imageView2" />-->
+
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/cardView"-->
+    <!--        android:layout_width="130dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/imageView2">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/item_artist_img"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:src="@drawable/artist1" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/item_artist_date"-->
+    <!--            android:layout_width="35dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:background="@color/colorPrimary"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="24 July"-->
+    <!--            tools:layout_editor_absoluteX="24dp"-->
+    <!--            tools:layout_editor_absoluteY="18dp" />-->
+
+    <!--    </androidx.cardview.widget.CardView> -->
